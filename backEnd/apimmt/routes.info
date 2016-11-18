@@ -1,0 +1,300 @@
+OBTENCION DE TODOS LOS MODULOS
+descripcion: Obtiene informacion de todos los modulos registrados... todos..!!
+tipo: GET
+url: http://logccbol.com/apitrata/modulos
+ejemploRespuesta:
+{
+  "status": "success",
+  "content": [
+    {
+      "id": "1",
+      "lat": "-16.457332",
+      "lon": "-68.146577",
+      "nom": "Modulo policial Nro. 14 Plan Autopista",
+      "dir": "Plan Autopista, Calle Ramos Gavilan",
+      "des": "Descripcion modulo policial",
+      "tel": null,
+      "tipo": null
+    },
+    {
+      "id": "2",
+      "lat": "-16.451263",
+      "lon": "-68.151008",
+      "nom": "Modulo policial Nro. 13 Achachicala",
+      "dir": "Plan Autopista, Av. Ramos Gavilan Lado Parroquia Virgen de Las Nieves",
+      "des": "Modulo Policial de asuntos varios",
+      "tel": null,
+      "tipo": null
+    },
+    {
+      "id": "3",
+      "lat": "-16.476085",
+      "lon": "-68.120966",
+      "nom": "Modulo policial Nro. 1 Plaza Arandia",
+      "dir": "Miraflores, Av. Las Americas, Plaza Arandia",
+      "des": "Modulo Policial de asuntos varios",
+      "tel": null,
+      "tipo": null
+    },
+    {
+      "id": "4",
+      "lat": "-16.477015",
+      "lon": "-68.123449",
+      "nom": "Modulo policial Nro. 2 Av. Las Delicias",
+      "dir": "Miraflores Av. Las Delicias lado mercado Las Delicias",
+      "des": "Modulo Policial de asuntos varios",
+      "tel": null,
+      "tipo": null
+    },
+    {
+      "id": "5",
+      "lat": "-16.474716",
+      "lon": "-68.125886",
+      "nom": "Modulo policial Nro. 3 Las Delicias",
+      "dir": "Miraflores, Av. Gral. Juan Jose Torrez",
+      "des": "Modulo Policial de asuntos varios",
+      "tel": null,
+      "tipo": null
+    },
+    {
+      "id": "6",
+      "lat": "-16.495715",
+      "lon": "-68.160078",
+      "nom": "Modulo policial Nro. 4 Mariano Colodro",
+      "dir": "Max Paredes, Calle Mariano Colodro lado Iglesia El Salvador",
+      "des": "Modulo Policial de asuntos varios",
+      "tel": null,
+      "tipo": null
+    },
+    {
+      "id": "7",
+      "lat": "-16.498545",
+      "lon": "-68.130586",
+      "nom": "Modulo policial Nro. 5 Santa Barbara",
+      "dir": "Santa Barbara, Av. Illimani, calle Castro",
+      "des": "Modulo Policial de asuntos varios",
+      "tel": null,
+      "tipo": null
+    },
+    {
+      "id": "8",
+      "lat": "-16.506483",
+      "lon": "-68.147049",
+      "nom": "Modulo policial Nro. 6 Villa Nuevo Potosi",
+      "dir": "Macrodistrito Cotahuma, entre 4 de Mayo y Guaman de Ayala",
+      "des": "Modulo Policial de asuntos varios",
+      "tel": null,
+      "tipo": null
+    },
+    {
+      "id": "9",
+      "lat": "-16.503304",
+      "lon": "-68.142288",
+      "nom": "Modulo policial Nro. 7 Plaza Alarcon",
+      "dir": "Av. Buenos Aires, 4 De Mayo lado parque Alarcon",
+      "des": "Modulo Policial de asuntos varios",
+      "tel": null,
+      "tipo": null
+    }
+  ]
+}
+observaciones: El campo tipo se va parametrizar pronto.
+________________________________________________________________
+****************************************************************
+
+OBTENCION DE MODULOS CERCANOS
+description: obtiene todos los modulos, de acuerdo a la distancia.
+tipo: POST
+url: http://logccbol.com/apitrata/modulos
+ejemploPeticion:
+{
+	"latitud":"-16.476085",
+	"longitud":"-68.120000"
+}
+ejemploRespuesta:
+{
+  "status": "success",
+  "content": [
+    {
+      "id": "3",
+      "lat": "-16.476085",
+      "lon": "-68.120966",
+      "nom": "Modulo policial Nro. 1 Plaza Arandia",
+      "dir": "Miraflores, Av. Las Americas, Plaza Arandia",
+      "des": "Modulo Policial de asuntos varios",
+      "tel": null,
+      "tipo": null,
+      "dis": 0.10300367446145
+    },
+    {
+      "id": "4",
+      "lat": "-16.477015",
+      "lon": "-68.123449",
+      "nom": "Modulo policial Nro. 2 Av. Las Delicias",
+      "dir": "Miraflores Av. Las Delicias lado mercado Las Delicias",
+      "des": "Modulo Policial de asuntos varios",
+      "tel": null,
+      "tipo": null,
+      "dis": 0.38202530872305
+    },
+    {
+      "id": "5",
+      "lat": "-16.474716",
+      "lon": "-68.125886",
+      "nom": "Modulo policial Nro. 3 Las Delicias",
+      "dir": "Miraflores, Av. Gral. Juan Jose Torrez",
+      "des": "Modulo Policial de asuntos varios",
+      "tel": null,
+      "tipo": null,
+      "dis": 0.64581783788444
+    },
+    {
+      "id": "7",
+      "lat": "-16.498545",
+      "lon": "-68.130586",
+      "nom": "Modulo policial Nro. 5 Santa Barbara",
+      "dir": "Santa Barbara, Av. Illimani, calle Castro",
+      "des": "Modulo Policial de asuntos varios",
+      "tel": null,
+      "tipo": null,
+      "dis": 2.7406536847188
+    },
+    {
+      "id": "1",
+      "lat": "-16.457332",
+      "lon": "-68.146577",
+      "nom": "Modulo policial Nro. 14 Plan Autopista",
+      "dir": "Plan Autopista, Calle Ramos Gavilan",
+      "des": "Descripcion modulo policial",
+      "tel": null,
+      "tipo": null,
+      "dis": 3.5185047646489
+    },
+    {
+      "id": "9",
+      "lat": "-16.503304",
+      "lon": "-68.142288",
+      "nom": "Modulo policial Nro. 7 Plaza Alarcon",
+      "dir": "Av. Buenos Aires, 4 De Mayo lado parque Alarcon",
+      "des": "Modulo Policial de asuntos varios",
+      "tel": null,
+      "tipo": null,
+      "dis": 3.848062576803
+    },
+    {
+      "id": "2",
+      "lat": "-16.451263",
+      "lon": "-68.151008",
+      "nom": "Modulo policial Nro. 13 Achachicala",
+      "dir": "Plan Autopista, Av. Ramos Gavilan Lado Parroquia Virgen de Las Nieves",
+      "des": "Modulo Policial de asuntos varios",
+      "tel": null,
+      "tipo": null,
+      "dis": 4.3071360328286
+    },
+    {
+      "id": "8",
+      "lat": "-16.506483",
+      "lon": "-68.147049",
+      "nom": "Modulo policial Nro. 6 Villa Nuevo Potosi",
+      "dir": "Macrodistrito Cotahuma, entre 4 de Mayo y Guaman de Ayala",
+      "des": "Modulo Policial de asuntos varios",
+      "tel": null,
+      "tipo": null,
+      "dis": 4.4432485047534
+    },
+    {
+      "id": "6",
+      "lat": "-16.495715",
+      "lon": "-68.160078",
+      "nom": "Modulo policial Nro. 4 Mariano Colodro",
+      "dir": "Max Paredes, Calle Mariano Colodro lado Iglesia El Salvador",
+      "des": "Modulo Policial de asuntos varios",
+      "tel": null,
+      "tipo": null,
+      "dis": 4.7984582800569
+    }
+  ]
+}
+observaciones: el campo dis, representa la distancia desde las coordenadas dadas hasta el modulo en si, en Km.
+________________________________________________________________________________________________________
+********************************************************************************************************
+REGISTRO DE USUARIOS
+descripcion: registra usuarios
+tipo: POST
+url: http://logccbol.com/apitrata/user
+ejemploPeticion:
+{
+	"user":"Kevin",
+	"password":"123456"
+}
+ejemploRespuesta:
+{
+  "status": "success",
+  "content": {
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiS2V2aW4iLCJwYXNzd29yZCI6IjEyMzQ1NiJ9.87bOV4eizjhyWsOCCUlWHT8pKDHLCTtEJEj-GxgiK4I"
+  }
+}
+_______________________________________________________________________________________________________________________________
+******************************************************************************************************************************
+LOGIN DE USUARIOS
+descripcion: login?
+tipo: POST
+url: http://logccbol.com/apitrata/login
+ejemploPeticion:
+{
+	"user":"Kevin",
+	"password":"123456"
+}
+ejemploRespuesta:
+{
+  "status": "success",
+  "content": {
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiS2V2aW4iLCJwYXNzd29yZCI6IjEyMzQ1NiJ9.87bOV4eizjhyWsOCCUlWHT8pKDHLCTtEJEj-GxgiK4I"
+  }
+}
+___________________________________________________________________________________________
+******************************************************************************************
+REGISTRO DE TESTIMONIOS
+descripcion: registra testimonios
+tipo: POST
+url: http://logccbol.com/apitrata/testimonio
+ejemploPeticion:
+{
+	"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiS2V2aW4iLCJwYXNzd29yZCI6IjEyMzQ1NiJ9.87bOV4eizjhyWsOCCUlWHT8pKDHLCTtEJEj-GxgiK4I",
+	"titulo":"testimonio 1",
+	"contenido":"Este es el contenido del primer testimonio",
+	"imei":"123456789012346"
+}
+ejemploRespuesta:
+{
+  "status": "success",
+  "content": "Se adiciono el testimonio"
+}
+observaciones: El token debe pertenecer al cliente, y si es un token invalido la API se tira xD
+_____________________________________________________________________________________
+*************************************************************************************
+OBTENER TESTIMONIOS
+descripcion: lista todos los testimonios actuales
+tipo: GET
+url: http://logccbol.com/apitrata/testimonios
+ejemploRespuesta:
+{
+  "status": "success",
+  "content": [
+    {
+      "id": "1",
+      "usuario_id": "1",
+      "tit": "testimonio 1",
+      "cont": "Este es el contenido del primer testimonio",
+      "imei": "123456789012346"
+    },
+    {
+      "id": "2",
+      "usuario_id": "1",
+      "tit": "testimonio segundo",
+      "cont": "Este es el contenido del segundo testimonio",
+      "imei": "123456789012345"
+    }
+  ]
+}

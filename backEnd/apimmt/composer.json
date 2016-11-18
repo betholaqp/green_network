@@ -1,0 +1,16 @@
+{
+  "name": "taylor/trata-y-trafico",
+  "type": "aplication",
+  "description": "Simple Aplication for hackaton event :D",
+  "homepage": "http://logccbol.com",
+  "authors": [
+      {
+          "name": "TayLorWebK",
+          "email": "kredmercury@gmail.com"
+      }
+  ],
+  "require": {
+      "slim/slim": "^3.0",
+      "firebase/php-jwt": "^4.0"
+  }
+}
