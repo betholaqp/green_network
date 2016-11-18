@@ -1,6 +1,6 @@
 $(document).on("ready",function(){
 
-	var host = "http://127.0.0.1/hackaton/apimmt/";
+	var host = "http://127.0.0.1/hackaton2016/green_network/backEnd/apimmt/";
 
 	$("#nuevo_usuario").hide();
 
@@ -20,15 +20,18 @@ $(document).on("ready",function(){
 			data:data	
 		}).success(function(data){
 			
-
+			
 			if (data.status == "success") 
 			{
-				console.log("asd");
-				window.location.href = "index.html";
+			
+				localStorage.setItem("token",data.content.token);
+				//window.location.href = "index.html";
 			}
 			else
 			{
-				$("#alerta").text(data.status);
+				
+				$("#alerta").text("Revice los Datos Ingresados");
+				localStorage.removeItem("token");
 			}
 			
 		}).error(function(data){

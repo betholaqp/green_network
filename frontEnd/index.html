@@ -1,0 +1,129 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Juego</title>
+
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+ 
+    <link href="css/estilo_impress.css" rel="stylesheet" />
+  	
+</head>
+
+<body class="impress-not-supported">
+
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+
+<div id="impress">
+
+
+	<div id="titulo" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try">Hackaton 2016</span>
+        <h1>GreenNetwork<sup>*</sup></h1>
+        <span class="footnote"><sup>*</sup> Ministerio de Medio Ambiente Y Agua</span>
+    </div>
+
+    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+     	
+        <h3 align="center">PORTAFOLIO</h3>
+        <div align="center"><img src="img/user-default.jpg"></div>
+        <p>Jugador:</p>
+        <p>Correo:</p>
+        <p>Fecha de Nacimiento:</p>
+       
+    </div>
+    
+    <div id="pregunta" class="step slide" data-x="-1000" data-y="-1500" align="center">
+        <img src="img/fondo.png"><br>
+        <b>Pregunta</b>?
+        <br>
+        <br>
+        <div id="contenedor_btn_juego" align="center">
+	        <a class="btn">REs1 as a as </a><br><br>
+	        <a class="btn">REs1</a><br><br>
+	        <a class="btn">REs1</a><br><br>
+	        <a class="btn">REs1</a>	<br><br>
+        </div>
+        <br>
+      	 <div id="contenedor_btn_juego" align="right">
+	        <a class="btn2">Nueva Pregunta </a><br><br>
+
+        </div>
+    </div>
+
+    <div class="step slide" id="curiosidades" data-x="0" data-y="-1500" align="center">
+        <q>Curiosidad</q>
+        <img src="img/fondo.png"><br>
+        <p>descricoion</p>
+    </div>
+
+    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <p>Semillas <br><img src="img/semilla.gif"><b>125</b> </p>
+    </div>
+
+    <!--<div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
+    </div>
+     
+    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it’s</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
+        <span class="footnote">* beat that, prezi ;)</span>
+    </div>-->
+
+    
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+
+<div class="hint">
+    <p>Use el Espacio o las Flechas para Mover</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+
+<script src="script/impress.js"></script>
+<script>impress().init();</script>
+
+<!--
+    
+    The `impress()` function also gives you access to the API that controls the presentation.
+    
+    Just store the result of the call:
+    
+        var api = impress();
+    
+    and you will get three functions you can call:
+    
+        `api.init()` - initializes the presentation,
+        `api.next()` - moves to next step of the presentation,
+        `api.prev()` - moves to previous step of the presentation,
+        `api.goto( stepIndex | stepElementId | stepElement, [duration] )` - moves the presentation to the step given by its index number
+                id or the DOM element; second parameter can be used to define duration of the transition in ms,
+                but it's optional - if not provided default transition duration for the presentation will be used.
+    
+    You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
+    Don't worry, it wont initialize the presentation again.
+    
+    For some example uses of this API check the last part of the source of impress.js where the API
+    is used in event handlers.
+    
+-->
+
+</body>
+</html>
