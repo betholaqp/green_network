@@ -12,7 +12,7 @@
 
  
     <link href="css/estilo_impress.css" rel="stylesheet" />
-  	
+  	<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
 </head>
 
 <body class="impress-not-supported">
@@ -31,6 +31,12 @@
         <span class="try">Hackaton 2016</span>
         <h1>GreenNetwork<sup>*</sup></h1>
         <span class="footnote"><sup>*</sup> Ministerio de Medio Ambiente Y Agua</span>
+        <div id="contenedor_btn" align="center">
+	        <a href="#/pregunta" class="btn" id="juego">Juego de Preguntas</a> &nbsp;
+	        <a href="#/curiosidades" class="btn">Portafolio</a>&nbsp;
+	        <a href="#/big" class="btn">Curiosidades</a>&nbsp;
+	        <a href="#/source" class="btn">Semillas</a>
+        </div>
     </div>
 
     <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
@@ -49,14 +55,11 @@
         <br>
         <br>
         <div id="contenedor_btn_juego" align="center">
-	        <a class="btn">REs1 as a as </a><br><br>
-	        <a class="btn">REs1</a><br><br>
-	        <a class="btn">REs1</a><br><br>
-	        <a class="btn">REs1</a>	<br><br>
+	        
         </div>
         <br>
       	 <div id="contenedor_btn_juego" align="right">
-	        <a class="btn2">Nueva Pregunta </a><br><br>
+	        <a class="btn2" id="nueva_pregunta">Nueva Pregunta </a><br><br>
 
         </div>
     </div>
@@ -124,6 +127,8 @@ if ("ontouchstart" in document.documentElement) {
     is used in event handlers.
     
 -->
-
+<script type="text/javascript" src="script/jquery.min.js"></script>
+<script type="text/javascript" src="script/sweetalert.min.js" ></script>
+<script type="text/javascript" src="script/principal.js"></script>
 </body>
 </html>
