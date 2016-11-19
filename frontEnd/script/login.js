@@ -1,7 +1,7 @@
 $(document).on("ready",function(){
 
-	var host = "http://127.0.0.1/hackaton2016/green_network/backEnd/apimmt/";
-
+	//var host = "http://127.0.0.1/hackaton2016/green_network/backEnd/apimmt/";
+	var host = "http://192.168.43.132/apimmt/";
 	$("#nuevo_usuario").hide();
 
 	$("#enviar").click(function(){
@@ -20,18 +20,17 @@ $(document).on("ready",function(){
 			data:data	
 		}).success(function(data){
 			
-			
 			if (data.status == "success") 
 			{
-			
 				localStorage.setItem("token",data.content.token);
-				//window.location.href = "index.html";
+				localStorage.setItem("base_url",host);
+				window.location.href = "curiosidades.html";
 			}
 			else
 			{
-				
 				$("#alerta").text("Revice los Datos Ingresados");
 				localStorage.removeItem("token");
+				localStorage.removeItem("base_url");
 			}
 			
 		}).error(function(data){

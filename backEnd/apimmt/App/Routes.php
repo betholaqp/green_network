@@ -26,7 +26,7 @@ $app->post('/upload', function (Request $request, Response $response) {
   $name = preg_replace('[\s+]','', $image->getClientFilename());
   $path = PROJECTPATH.'/modules/curiosidades/'.$name;
   $image->moveTo($path);
-  $url = IP.'/apimmt/modules/curiosidades/'.$name;
+  $url = '/modules/curiosidades/'.$name;
   $c = new curiosidades();
   $c->add($url, $data['desc']);
 });
